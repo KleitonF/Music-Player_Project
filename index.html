@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto Player de Áudio</h1>
+    </header>
+    <main>
+
+        <div class="menu">
+            <img class="icon_menu" src="./assets/images/icon_menu.png" status="close" alt="">
+            <section class="list_menu">
+                <div class="it_menu it_01"> <img class="img_menu" src="./assets/images/forever-in-reverse.PNG" alt="">Forever In Reverse</div>
+                <div class="it_menu it_02"> <img class="img_menu" src="./assets/images/pure-force.PNG" alt="">Back to Seattle</div>
+                <div class="it_menu it_03"> <img class="img_menu" src= "./assets/images/back-to-seattle.PNG" alt="">Pure Force</div>
+                <div class="it_menu it_04"> <img class="img_menu" src="./assets/images/stuck-in-apocaliptic-vision.PNG" alt="">Stuck in Apocaliptic Vision</div>
+                <div class="it_menu it_05"> <img class="img_menu" src="./assets/images/timelord.PNG" alt="">Timelord</div>
+            </section>
+        </div>
+
+        <div class="container">
+            <img class="img_ilust" src="./assets/images/forever-in-reverse.PNG" alt="">
+            
+            <div class = "player">
+                <audio class="music"><source src="./assets/music/Forever in Reverse.mp4"></audio>
+
+                <div class="progress_wrap"> 
+                    <div class="progress_bar"></div> 
+                </div>
+                
+                <div class="controller">
+                    <img class="btn btn_back" src="./assets/images/back-branco.png"></img>
+                    <img class="btn btn_play-pause" src="./assets/images/play-branco.png" status="pause"></img>
+                    <img class="btn btn_forward" src="./assets/images/forward-branco.png"></img>
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Note from dev: this page was created for studying purposes only.<br>
+            I do not own any of these videos/audios. Please do not share.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

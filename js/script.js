@@ -5,49 +5,39 @@ let btn_forward = document.getElementsByClassName("btn_forward")[0]
 let menu = document.getElementsByClassName("menu")[0]
 let icon_menu = document.getElementsByClassName("icon_menu")[0]
 let list_menu = document.getElementsByClassName("list_menu")[0]
-let it_01 = document.getElementsByClassName("it_01")[0]
-let it_02 = document.getElementsByClassName("it_02")[0]
-let it_03 = document.getElementsByClassName("it_03")[0]
-let it_04 = document.getElementsByClassName("it_04")[0]
-let it_05 = document.getElementsByClassName("it_05")[0]
+let it_menu = document.querySelectorAll(".it_menu")
 let music = document.getElementsByClassName("music")[0]
 let progress_bar = document.getElementsByClassName("progress_bar")[0]
+let list_music = [
+    {
+        img:"./assets/images/forever-in-reverse.PNG",
+        src:"./assets/music/Forever in Reverse.mp4"
+    },
+    {
+        img:"./assets/images/pure-force.PNG",
+        src:"./assets/music/A Pure Force.mp4"
+    },
+    {
+        img:"./assets/images/back-to-seattle.PNG",
+        src:"./assets/music/Back to Seattle.mp4"
+    },
+    {
+        img:"./assets/images/stuck-in-apocaliptic-vision.PNG",
+        src:"./assets/music/Stuck In The Apocalyptic Vision.mp4"
+    },
+    {
+        img:"./assets/images/timelord.PNG",
+        src:"./assets/music/Timelord.mp4"
+    }
+]
 
-// lista de musicas do menu (Versao 1 falta aprimorar)
-it_01.addEventListener("click",()=>{
-    let img = "./assets/images/forever-in-reverse.PNG"
-    let src = "./assets/music/Forever in Reverse.mp4"
-    img_ilust.setAttribute("src",img)
-    music.setAttribute("src",src)
-})
-
-it_02.addEventListener("click",()=>{
-    let img = "./assets/images/pure-force.PNG"
-    let src = "./assets/music/A Pure Force.mp4"
-    img_ilust.setAttribute("src",img)
-    music.setAttribute("src",src)
-})
-
-it_03.addEventListener("click",()=>{
-    let img = "./assets/images/back-to-seattle.PNG"
-    let src = "./assets/music/Back to Seattle.mp4"
-    img_ilust.setAttribute("src",img)
-    music.setAttribute("src",src)
-})
-
-it_04.addEventListener("click",()=>{
-    let img = "./assets/images/stuck-in-apocaliptic-vision.PNG"
-    let src = "./assets/music/Stuck In The Apocalyptic Vision.mp4"
-    img_ilust.setAttribute("src",img)
-    music.setAttribute("src",src)
-})
-
-it_05.addEventListener("click",()=>{
-    let img = "./assets/images/timelord.PNG"
-    let src = "./assets/music/Timelord.mp4"
-    img_ilust.setAttribute("src",img)
-    music.setAttribute("src",src)
-})
+for(let i=0; i< it_menu.length; i++){
+    it_menu[i].addEventListener("click", function(e){
+        console.log(e.target.innerHTML)
+        img_ilust.setAttribute("src",list_music[i].img)
+        music.setAttribute("src",list_music[i].src)
+    })
+}
 
 // Menu Retratil
 icon_menu.addEventListener("click",()=>{

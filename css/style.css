@@ -67,6 +67,7 @@ main{
     margin: 7px;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .it_menu{
@@ -84,6 +85,7 @@ main{
 .it_menu:hover{
     background-color: #6362b8;
     text-shadow: 0px 0px 3px white;
+    cursor: pointer;
 }
 
 .img_menu{
@@ -150,6 +152,7 @@ main{
     height: 40px;
     margin: 20px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 footer{
